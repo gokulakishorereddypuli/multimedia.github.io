@@ -2,7 +2,23 @@
 <title>Home</title>
 <html>
     <style>
-      
+
+            .btn-group .button {
+              background-color: transparent; /* Green */
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              cursor: pointer;
+              float: left;
+            }
+
+            .btn-group .button:hover {
+              background-color: #3e8e41;
+            }
     </style>
     
     <body bgcolor="#cccccc" 
@@ -12,15 +28,20 @@
      background-attachment:fixed; 
      background-size: 100% 100%;">
         
-           <div id="logo" style="height:70px; width:250px; margin: 0 auto; text-align:center;">
+           <div  style="height:70px; width:250px; margin: 0 auto; text-align:center;">
                             <img id="ctl00_Imagez" src="https://examcell.gprec.ac.in/Images/StudentDetails/gprec_logo.png" style="height:70px;width:250px;border-width:0px;" />
            </div>
-      <vedio heigth="200px" width="400px" controls>
-          <source src="https://www.youtube.com/watch?v=LwHJXNSbpV8&ab_channel=GPRECCampusRadio" type="vedio/mp4">
-       </vedio>
-        
-        <iframe width="420" height="345" src="https://www.youtube.com/watch?v=LwHJXNSbpV8&ab_channel=GPRECCampusRadio">
-</iframe>
+
+           
+           <div class="btn-group">
+                  <button class="button" onclick="window.location.href='https://puli-gokula-kishore-reddy.github.io/multimedia.github.io/Registration/home.html'" >Home</button>
+                  <button class="button">CSE</button>
+                  <button class="button">Tutorials</button>
+                  <button class="button">Contact</button>
+           </div>
+           <div class="btn-group">
+                  
+           </div>
         
     </body>
 </html>
