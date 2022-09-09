@@ -1,74 +1,30 @@
 <!DOCTYPE html>
 <html>
 <title>CSE Dept</title>
-
-<style>
-	.header{
-		font-size: 55px;
-		font-display: auto;
-		color: #ff6666;
-	}
-	.div1{
-		margin-left: 40px;
-		margin-right: 40px;
-		font-size: 18px;
-		font-family: Arial, Helvetica, sans-serif;
-		
-		 text-align: justify;
-  			text-justify: inter-word;
-	}
-	.button {
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 20px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-</style>
+<link  rel='stylesheet' href="style.css" type="text/css" >
 <header style="background-color:black">
-	<img src="https://examcell.gprec.ac.in/Images/StudentDetails/gprec_logo.png" style="display: inline;" width="100"height="55">
-	<h class="header">Department of CSE</h>
+	<img src="https://examcell.gprec.ac.in/Images/StudentDetails/gprec_logo.png" style="display: inline;" width="150"height="75">
+	<h class="header" style="display: inline;">Department of Computer Science and Engineering</h>
+  
+  <div >
+      <button class="button" onclick="home()"  value="CSE Dept"><span><img src="https://img.icons8.com/ios-filled/452/home.png" height="22" width="22">Home</span></button>
+      <button class="button" onclick="programs()"><span><img src="https://img.icons8.com/ios-filled/452/motarboard.png" height="22" width="22">Programs</span></button>
+      <button class="button" onclick="window.location.href='https://www.gprec.ac.in/scheme-2020/S-20-CSE-Syllabus.pdf'"><span><img src="https://img.icons8.com/ios-filled/452/wordbook.png" height="22" width="22">Syllabus</span></button>
+      <button class="button"  onclick="faculty()"><span><img src="https://img.icons8.com/ios-filled/452/user.png" height="22" width="22">Faculty</span></button>
+      <button class="button"  onclick="gallery()"><span><img src="https://img.icons8.com/sf-ultralight-filled/452/gallery.png" height="22" width="22">Gallery</span></button>
+      <button class="button"  onclick="studentactivities()"><span><img src="https://img.icons8.com/ios-filled/452/crowd.png" height="22" width="22">Student Activities</span></button>
+      <button class="button"  onclick="materials()"><span><img src="https://img.icons8.com/ios-filled/344/books.png" height="22" width="22">Materials</span></button>
+</div>
 </header>
 <body>
-	<div >
-                  <button class="button" onclick="window.location.href='https://puli-gokula-kishore-reddy.github.io/multimedia.github.io/Registration/home.html'" value="CSE Dept"><span><img src="home.png" height="22" width="22">Home</span></button>
-                  <button class="button"><span><img src="mortarboard.png" height="22" width="22">Programs</span></button>
-                  <button class="button"><span><img src="book.png" height="22" width="22">Syllabus</span></button>
-                  <button class="button"><span><img src="user.png" height="22" width="22">Faculty</span></button>
-     </div>
+
+  <div >
+    <img src="https://www.gprec.ac.in/wp-content/uploads/2019/05/gprec-banner1-3-768x261@2x.jpg" height="161" width="1350">
+  </div>
+
 	<br><br>
-	<div class="div1">
+
+<div class="div1" id="home">
 		<p>
 		The Department of Computer Science and Engineering (CSE) was established in the year 1991 with an intake of 30. Over the years, it has grown by leaps & bounds and the current intake is 180. The department is accredited first in 2005 by the National Board of Accreditation, New Delhi for three years, re-accredited in 2008 and recently in 2019 accredited for three more years. The department also offers M.Tech Program from 2009, in Computer Science and Engineering with an intake of 18. The department is recognized as a research centre by JNTUA to offer full-time Ph.D program.<br><br>
 
@@ -117,10 +73,333 @@ Computer Science & Engineering program students will be able to
 		</p>
 	</div>
 
+
+
+    
+<div style="margin-left:50px ;margin-right :50px" id="faculty">
+  <h2>Faculty Profiles</h2>
+  <hr>
+
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+    <tbody>
+    <tr>
+    <td valign="top" width="25%"><img src="https://www.gprec.ac.in/images/CSE/cs-37-Vinay.png" width="150" height="175" /></td>
+    <td valign="top" width="75%">
+    <table border="0" width="100%" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC">
+    <tbody>
+    <tr>
+    <th class="font13" scope="col" align="left" bgcolor="#FFFFFF" width="200">Name of the faculty</th>
+    <th scope="col" align="left" bgcolor="#FFFFFF" width="330"><a href="https://www.gprec.ac.in/images/cse%20faculty%20profiles/Vinay%20Kumar.pdf">Sri. S. Vinay Kumar</a></th>
+    </tr>
+    <tr>
+    <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Designation</td>
+    <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><strong>Assistant Professor</strong></td>
+    </tr>
+    <tr>
+    <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Qualifications</td>
+    <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><span class="font16">M.Tech., (Ph.D)</span></td>
+    </tr>
+    <tr>
+    <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Research Interest</td>
+    <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><strong>Cloud Computing<br />
+    </strong></td>
+    </tr>
+    <tr>
+    <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Google Scholar</td>
+    <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><a href="https://scholar.google.co.in/citations?user=YmTqh1QAAAAJ&amp;hl=en"><strong> </strong>https://scholar.google.co.in/citations?user=YmTqh1QAAAAJ&amp;hl=en</a></td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <hr>
+
+    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tbody>
+      <tr>
+      <td valign="top" width="25%"><img src="https://www.gprec.ac.in/images/CSE/cs-32.png" width="150" height="175" /></td>
+      <td valign="top" width="75%">
+      <table border="0" width="100%" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC">
+      <tbody>
+      <tr>
+      <th class="font13" scope="col" align="left" bgcolor="#FFFFFF" width="200">Name of the faculty</th>
+      <th scope="col" align="left" bgcolor="#FFFFFF" width="330"><a href="https://www.gprec.ac.in/images/cse%20faculty%20profiles/Suresh.pdf">Sri. V.Suresh</a></th>
+      </tr>
+      <tr>
+      <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Designation</td>
+      <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><strong>Assistant Professor</strong></td>
+      </tr>
+      <tr>
+      <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Qualifications</td>
+      <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><span class="font16">M.Tech., (Ph.D)</span></td>
+      </tr>
+      <tr>
+      <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Research Interest</td>
+      <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><strong>Software Engineering</strong></td>
+      </tr>
+      <tr>
+      <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Google Scholar</td>
+      <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><a href="https://scholar.google.com/citations?user=niOnPckAAAAJ&amp;hl=en"><strong> </strong>https://scholar.google.com/citations?user=niOnPckAAAAJ&amp;hl=en</a></td>
+      </tr>
+      </tbody>
+      </table>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+
+      <hr>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0">
+        <tbody>
+        <tr>
+        <td valign="top" width="25%"><img src="https://www.gprec.ac.in/images/CSE/RamanaReddy.jpeg" width="150" height="175" /></td>
+        <td valign="top" width="75%">
+        <table border="0" width="100%" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC">
+        <tbody>
+        <tr>
+        <th class="font13" scope="col" align="left" bgcolor="#FFFFFF" width="200">Name of the faculty</th>
+        <th scope="col" align="left" bgcolor="#FFFFFF" width="330"><a href="https://www.gprec.ac.in/images/cse%20faculty%20profiles/RamanaReddy.pdf">Sri.G.V.Ramana Reddy</a></th>
+        </tr>
+        <tr>
+        <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Designation</td>
+        <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><strong>Assistant Professor</strong></td>
+        </tr>
+        <tr>
+        <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Qualifications</td>
+        <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><span class="font16">M.Tech., (Ph.D)</span></td>
+        </tr>
+        <tr>
+        <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Research Interest</td>
+        <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><strong>Artificial Intelligence, Data Science, Machine Learning<br />
+        </strong></td>
+        </tr>
+        <tr>
+        <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Google Scholar</td>
+        <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><a href="https://scholar.google.com/citations?user=mbODgTcAAAAJ&amp;hl=en">https://scholar.google.com/citations?user=mbODgTcAAAAJ&amp;hl=en</a></td>
+        </tr>
+        </tbody>
+        </table>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+  <hr>
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+    <tbody>
+    <tr>
+    <td valign="top" width="25%"><img src="https://www.gprec.ac.in/images/CSE/cs-24.png" width="150" height="175" /></td>
+    <td valign="top" width="75%">
+    <table border="0" width="100%" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC">
+    <tbody>
+    <tr>
+    <th class="font13" scope="col" align="left" bgcolor="#FFFFFF" width="200">Name of the faculty</th>
+    <th scope="col" align="left" bgcolor="#FFFFFF" width="330"><a href="https://www.gprec.ac.in/images/cse%20faculty%20profiles/Dilip%20Kumar%20Reddy.pdf">Sri. B.Dilip Kumar Reddy</a></th>
+    </tr>
+    <tr>
+    <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Designation</td>
+    <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><strong>Assistant Professor</strong></td>
+    </tr>
+    <tr>
+    <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Qualifications</td>
+    <td align="left" valign="middle" bgcolor="#FFFFFF" width="330">
+    <p class="font16">M.Tech</p>
+    </td>
+    </tr>
+    <tr>
+    <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Research Interest</td>
+    <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><strong>Computer Networks</strong></td>
+    </tr>
+    <tr>
+    <td class="font13" align="left" valign="middle" bgcolor="#FFFFFF" width="200">Google Scholar</td>
+    <td align="left" valign="middle" bgcolor="#FFFFFF" width="330"><strong> </strong><a href="https://scholar.google.com/citations?user=JBdlnHsAAAAJ">https://scholar.google.com/citations?user=JBdlnHsAAAAJ</a></td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+
+    
+</div>
+
+
+
+<div class="div1" id="programsoffered">
+  <p><strong>PROGRAM: B.Tech (CSE)</strong></p>
+<p>INTAKE:180</p>
+<p>ACADEMIC REGULATIONS FOR UG (B.Tech): <a href="https://www.gprec.ac.in/T%20and%20P/Regu-B.Tech%20scheme-2010%20-%20Web.pdf">Scheme-2010</a>   <a href="https://www.gprec.ac.in/T%20and%20P/s2013_UG_web.pdf">Scheme-2013</a>   <a href="https://www.gprec.ac.in/T%20and%20P/S-17%20ug%20regulations.pdf">Scheme-2017</a>   <a class="MenuLink1" href="https://www.gprec.ac.in/scheme-2020/GPREC-9X-SCHEME-2020 REGULATIONS.pdf">Scheme-2020</a>   (Revised)</p>
+<p><strong>PROGRAM: M.Tech(CSE)</strong></p>
+<p>INTAKE:18</p>
+<p>ACADEMIC REGULATIONS FOR PG (M.Tech): <a href="https://www.gprec.ac.in/T%20and%20P/s2013_PG_web.pdf">Scheme-2013</a>      <a href="https://www.gprec.ac.in/T%20and%20P/S-17%20PG%20regulations.pdf">Scheme-2017</a></p>
+<p><strong>PROGRAM : Full Time Ph.D</strong></p>
+
+</div>
+
+<div id="gallery">
+
+<img width="310" height="150"
+src="https://www.gprec.ac.in/wp-content/uploads/2019/08/image011.png">
+</img>
+<img width="310" height="150"
+src="https://www.gprec.ac.in/wp-content/uploads/2019/08/image013.jpg">
+</img>
+<img width="310" height="150"
+src="https://www.gprec.ac.in/wp-content/uploads/2019/07/2b-1.jpg">
+</img>
+<img width="310" height="150"
+src="https://www.gprec.ac.in/wp-content/uploads/2019/07/6b-1.jpg">
+</img>
+
+<iframe width="310" height="150"
+src="https://www.youtube.com/embed/OrU0QODfoe4?feature=oembed">
+</iframe>
+<iframe width="310" height="150"
+src="https://www.youtube.com/embed/UUCKZcdpFWc?feature=oembed">
+</iframe>
+<iframe width="310" height="150"
+src="https://www.youtube.com/embed/A3Qaf5ohX_M?feature=oembed">
+</iframe>
+
+<audio controls autoplay>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<div class="div1" id="studentactivities">
+    <p>The department has the following student forums</p>
+<ul>
+<li><strong>Institution of Engineers (India) (IEI)</strong></li>
+<li><strong>Computer Society of India (CSI)</strong></li>
+<li><strong>IEEE-Computer Society</strong></li>
+</ul>
+<p>The department is conducting various activities under these forums. The details are:</p>
+<ul>
+<li>Seminars</li>
+<li>Group Discussions</li>
+<li>Coding Contest</li>
+<li>Technical Quiz</li>
+<li>Paper Presentations</li>
+<li>Poster Presentations</li>
+<li>Hackathons</li>
+<li>Mock Interviews</li>
+<li>Guest Lectures On Emerging Technologies</li>
+<li>App Challenge</li>
+</ul>
+
+  </div>
+
+  <div class="div1" id="materials">
+    <p>Subject Materials :</p>
+<table width="836">
+<tbody>
+<tr>
+<td width="68"><strong>S.No</strong></td>
+<td width="464"><strong>Subject Name</strong></td>
+<td width="304"><strong>Developed By</strong></td>
+</tr>
+<tr>
+<td width="68">1.</td>
+<td width="464"><a href="http://www.gprec.ac.in/cse materials/FLAT.pdf">Formal Language and Automata Theory</a></td>
+<td width="304">Dr. G.Vijay Kumar</td>
+</tr>
+<tr>
+<td width="68">2.</td>
+<td width="464"><a href="http://www.gprec.ac.in/cse materials/deeplearning.pdf">Deep Learning</a></td>
+<td width="304">Dr. D.Kavitha</td>
+</tr>
+<tr>
+<td width="68">3.</td>
+<td width="464"><a href="http://www.gprec.ac.in/cse materials/Data_Warehousing_and_Data_Mining.pdf">Data Warehousing and Mining</a></td>
+<td width="304">Sri. Rameswara Reddy.K.V</td>
+</tr>
+<tr>
+<td width="68">4.</td>
+<td width="464"><a href="http://www.gprec.ac.in/cse materials/PYTHON.pdf">Python Programming</a></td>
+<td width="304">Ms.P.Sunandha</td>
+</tr>
+<tr>
+<td width="68">5.</td>
+<td width="464"><a href="http://www.gprec.ac.in/cse materials/Machine_Learning.pdf">Machine Learning</a></td>
+<td width="304">Dr.B.Santhosh Kumar</td>
+</tr>
+</tbody>
+</table>
+
+  </div>
+
 </body>
 
-<foter>
-	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</foter>
+<script>
+  var h = document.getElementById("home");
+  var f= document.getElementById("faculty");
+  var p= document.getElementById("programsoffered");
+  var g= document.getElementById("gallery");
+  var s= document.getElementById("studentactivities");
+  var m= document.getElementById("materials");
+  h.style.display="block"
+  f.style.display = "none";
+  p.style.display = "none";
+  g.style.display = "none";
+  s.style.display = "none";
+  m.style.display = "none";
+  function materials() {
+    m.style.display = "block";
+    h.style.display="none";
+    p.style.display = "none";
+    g.style.display = "none";
+    s.style.display = "none";
+    f.style.display = "none";
+  }
+  function faculty() {
+    f.style.display = "block";
+    h.style.display="none";
+    p.style.display = "none";
+    g.style.display = "none";
+    s.style.display = "none";
+    m.style.display = "none";
+  }
+  function home() {
+    h.style.display="block";
+    f.style.display = "none";
+    p.style.display = "none";
+    g.style.display = "none";
+    s.style.display = "none";
+    m.style.display = "none";
+  }
+  function programs()
+  {
+    p.style.display = "block";
+    h.style.display="none";
+    f.style.display = "none";
+    g.style.display = "none";
+    s.style.display = "none";
+    m.style.display = "none";
+  }
+  function gallery()
+  {
+    g.style.display = "block";
+    p.style.display = "none";
+    h.style.display="none";
+    f.style.display = "none";
+    s.style.display = "none";
+    m.style.display = "none";
+  }
+  function studentactivities()
+  {
+    s.style.display = "block";
+    g.style.display = "none";
+    p.style.display = "none";
+    h.style.display="none";
+    f.style.display = "none";
+    m.style.display = "none";
+  }
+  
+</script>
 </html>
+
 
