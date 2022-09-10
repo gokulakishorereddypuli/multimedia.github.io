@@ -6,8 +6,9 @@ body {
   box-sizing: border-box;
 }
 .container {
-  padding: 160px;
-  background-color: #f8ecec;
+  margin-top: 2px;
+  padding: 260px;
+  background-color: white;
 }
 input[type=text],input[type=password],input[type=date],input[type=tel],input[type=email] {
   width: 100%;
@@ -15,11 +16,11 @@ input[type=text],input[type=password],input[type=date],input[type=tel],input[typ
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #ffffcc;
+  background: #e0e0dfa1;
 }
 
 input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,input[type=date]:focus,input[type=tel]:focus{
-  background-color:#ccffff;
+  background-color:#ecf5f5e5;
   outline: none;
 }
 hr {
@@ -27,7 +28,7 @@ hr {
   margin-bottom: 25px;
 }
 .registerbtn {
-  background-color: #ff66cc;
+  background-color: #5d0cf3;
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
