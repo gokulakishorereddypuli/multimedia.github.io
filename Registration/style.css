@@ -1,7 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -18,7 +17,6 @@ input[type=text],input[type=password],input[type=date],input[type=tel],input[typ
   border: none;
   background: #e0e0dfa1;
 }
-
 input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,input[type=date]:focus,input[type=tel]:focus{
   background-color:#ecf5f5e5;
   outline: none;
@@ -37,7 +35,6 @@ hr {
   width: 100%;
   opacity: 0.9;
 }
-
 .registerbtn:hover {
   opacity: 1;
 }
@@ -48,7 +45,6 @@ a {
   background-color: #f1f1f1;
   text-align: center;
 }
-
 .required{
   color:red;
 }
