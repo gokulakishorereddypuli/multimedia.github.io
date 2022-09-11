@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<title>Home</title>
+<title>GPREC- G.Pulla Reddy Engineering college</title>
 <html>
     <style>
-
             .btn-group .button {
-              background-color: transparent; /* Green */
+              background-color: black; /* Green */
               border: none;
-              color: white;
+              color: rgb(236, 118, 8);
               padding: 15px 32px;
               text-align: center;
+              
+              text-underline-position: auto;
               text-decoration: none;
               display: inline-block;
               font-size: 16px;
@@ -17,28 +18,48 @@
             }
 
             .btn-group .button:hover {
-              background-color: #08F5F2;
+              background-color:rgb(126, 217, 240);
             }
+            .multicolor-text{
+            text-align: center;
+            font-size: 30px;
+            background: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+          -webkit-background-clip: text;
+            color: transparent;
+        }
     </style>
-    
-    <body bgcolor="#cccccc" 
-        style="
-     background-image:linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0, 0, 0, 0.2) 50%), url('https://www.gprec.ac.in/wp-content/uploads/2019/07/gprec-banner1-768x260@2x.jpg'); 
-     background-repeat:no-repeat; 
-     background-attachment:fixed; 
-     background-size: 100% 100%;">
-        
-           <div  style="height:70px; width:250px; margin: 0 auto; text-align:center;">
-                            <img id="ctl00_Imagez" src="https://www.gprec.ac.in/wp-content/uploads/2019/05/gprec_logo1.png" style="height:70px;width:250px;border-width:0px;" />
+    <body >
+           <div  style="height:70px; width:250px; margin: 0 auto;">
+                            <img src="https://www.gprec.ac.in/wp-content/uploads/2019/05/gprec_logo1.png" style="height:70px;width:250px;border-width:0px;" />
            </div>
-
-
            <div class="btn-group">
-                  <button class="button" onclick="window.location.href='home.html'">Home</button>
-                  <button class="button" onclick="window.location.href='csedept.html'">CSE Dept</button>
-                  <button class="button">Tutorials</button>
-                  <button class="button">Contact</button>
+            <button class="button" onclick="window.location.href='home.html'"><b>Home</b></button>
+            <button class="button"><b>About Us</b></button>
+            <button class="button"> <b>Admissions</b></button>
+            <button class="button"> <b>Exam cell</b></button>
+            <button class="button"> <b>R & D</b></button>
+            <button class="button"> <b>Placements</b></button>
+            <button class="button" onclick="window.location.href='csedept.html'"><b>CSE Department</b></button>
+            <button class="button"> <b>NIRF</b></button>
+            <button class="button"> <b>Payment</b></button>
+            <button class="button"> <b>Contact</b></button>
             </div>
-        
+            <div class="multicolor">
+              <marquee></marquee>
+            </div>
+            <marquee>
+               <div class="multicolor-text">
+                Welcome To G. Pulla Reddy Engineering College(Autonomous), Kurnool.
+             </div>
+            </marquee>
+            <img src="https://www.gprec.ac.in/wp-content/uploads/2019/04/G.-Pulla-Reddy-Garu.jpg" height="250" width="250" style="margin-left:40%">
+            <p style="margin-left: 41%; color: blue;"><b>Late Sri G.Pulla Reddy, (Founder)</b></p>
     </body>
 </html>
